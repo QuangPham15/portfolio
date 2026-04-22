@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Huu Minh Quang Pham — Full-Stack Developer</title>
+    <title>Huu Minh Quang Pham — Full-Stack Engineer</title>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -50,7 +50,7 @@
           pick up new technologies fast, and grow within a product-driven engineering team.
         </p>
         <div class="hero-actions">
-          <a href="assets/cv.pdf" download class="btn btn-primary">
+          <a href="assets/CV/Fullstack_Huu Minh Quang Pham_CV.pdf" download="Fullstack_Huu-Minh-Quang-Pham_CV.pdf" class="btn btn-primary">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
             Download CV
           </a>
@@ -83,18 +83,15 @@
               I'm a <strong>Full-Stack Developer</strong> with a Bachelor of Information Technology
               (Software Engineering) from La Trobe University. I'm currently interning at
               <strong>FPT Corporation</strong>, where I'm building a real-time project management
-              system from the ground up.
+              system from the ground up. I'm also a strong believer in AI-augmented development —
+              I integrate tools like <strong>Claude Code, Codex, and Cursor</strong> daily for faster
+              planning, debugging, and code review. I'm actively seeking a
+              <strong>Junior Full-Stack role</strong> in a product-driven engineering team.
             </p>
             <p>
               My stack centers around <strong>React 18, TypeScript, Node.js, and PostgreSQL</strong>.
               I've built production-grade features including real-time collaboration with Socket.IO,
               E2E test suites with Playwright, and automated CI/CD pipelines via Vercel and Render.
-            </p>
-            <p>
-              I'm also a strong believer in AI-augmented development — I integrate tools like
-              <strong>Claude Pro, Codex, and Cursor</strong> daily for faster planning, debugging,
-              and code review. I'm actively seeking a <strong>Junior Full-Stack role</strong> in a
-              product-driven engineering team.
             </p>
             <div class="about-meta">
               <div class="meta-item">
@@ -108,9 +105,9 @@
             </div>
           </div>
           <div class="about-avatar-wrap" data-aos="fade-left">
+            <div class="avatar-ring"></div>
             <div class="about-avatar">
               <img src="assets/avatar/Avatar_About.jpg" alt="Huu Minh Quang Pham" class="avatar-img" />
-              <div class="avatar-ring"></div>
             </div>
           </div>
         </div>
@@ -207,11 +204,11 @@
 
           <div class="skill-card" data-aos="fade-up" data-aos-delay="400">
             <div class="skill-card-icon">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="7" y="7" width="10" height="10" rx="1"/><path d="M9 3v2M15 3v2M9 19v2M15 19v2M3 9h2M3 15h2M19 9h2M19 15h2"/></svg>
             </div>
             <h3 class="skill-card-title">Tools & AI</h3>
             <div class="skill-badges">
-              <span class="badge badge-ai">Claude Pro</span>
+              <span class="badge badge-ai">Claude Code</span>
               <span class="badge badge-ai">Codex</span>
               <span class="badge badge-ai">Cursor</span>
               <span class="badge badge-ai">GitHub Copilot</span>
@@ -242,7 +239,7 @@
               <p class="project-desc">
                 Architected and delivered a full-stack real-time project management system from the ground up —
                 covering system design, API architecture, and cloud deployment. Built a collaborative interface
-                enabling live board sync across <strong>5–10 concurrent users</strong> with sub-second update
+                enabling live board sync tested across <strong>5–10 concurrent users</strong> (scalable beyond) with sub-second update
                 latency. Designed <strong>20+ RESTful API endpoints</strong>, established a Playwright E2E test suite,
                 and configured CI/CD pipelines with auto-triggers on Git push.
               </p>
@@ -274,43 +271,68 @@
 
           <!-- Screenshots gallery -->
           <div class="project-screenshots" data-aos="fade-up">
-            <div class="screenshots-label">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
-              Screenshots
+            <div class="screenshots-tabs">
+              <button class="tab-btn active" data-tab="screenshots">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+                Screenshots
+              </button>
+              <button class="tab-btn" data-tab="architecture">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                Architecture
+              </button>
             </div>
-            <div class="screenshot-main" id="screenshotMain">
-              <img
-                src="assets/screenshots/monday-1.png"
-                alt="Sprint Board"
-                id="mainScreenshotImg"
-                style="display:none"
-                onload="this.style.display='block';this.nextElementSibling.style.display='none'"
-              />
-              <div class="screenshot-placeholder">
-                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
-                <span>Add screenshots to<br><code>assets/screenshots/</code></span>
+
+            <!-- Tab: Screenshots -->
+            <div class="tab-content active" id="tab-screenshots">
+              <div class="screenshot-main" id="screenshotMain">
+                <img
+                  src="assets/screenshots/monday-1.png"
+                  alt="Sprint Board"
+                  id="mainScreenshotImg"
+                  style="display:none"
+                  onload="this.style.display='block';this.nextElementSibling.style.display='none'"
+                />
+                <div class="screenshot-placeholder">
+                  <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+                  <span>Add screenshots to<br><code>assets/screenshots/</code></span>
+                </div>
+                <button class="screenshot-zoom" id="screenshotZoom" aria-label="Zoom in">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg>
+                </button>
               </div>
-              <button class="screenshot-zoom" id="screenshotZoom" aria-label="Zoom in">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg>
-              </button>
+              <div class="screenshot-thumbs" id="screenshotThumbs">
+                <button class="thumb active" data-src="assets/screenshots/monday-1.png" data-caption="Sprint Board">
+                  <img src="assets/screenshots/monday-1.png" alt="Sprint Board" onerror="this.parentElement.classList.add('thumb-empty')" />
+                  <span class="thumb-label">Sprint Board</span>
+                </button>
+                <button class="thumb" data-src="assets/screenshots/monday-2.png" data-caption="Kanban Board">
+                  <img src="assets/screenshots/monday-2.png" alt="Kanban Board" onerror="this.parentElement.classList.add('thumb-empty')" />
+                  <span class="thumb-label">Kanban</span>
+                </button>
+                <button class="thumb" data-src="assets/screenshots/monday-3.png" data-caption="Calendar View">
+                  <img src="assets/screenshots/monday-3.png" alt="Calendar View" onerror="this.parentElement.classList.add('thumb-empty')" />
+                  <span class="thumb-label">Calendar</span>
+                </button>
+                <button class="thumb" data-src="assets/screenshots/monday-4.png" data-caption="Updates">
+                  <img src="assets/screenshots/monday-4.png" alt="Updates" onerror="this.parentElement.classList.add('thumb-empty')" />
+                  <span class="thumb-label">Updates</span>
+                </button>
+              </div>
             </div>
-            <div class="screenshot-thumbs" id="screenshotThumbs">
-              <button class="thumb active" data-src="assets/screenshots/monday-1.png" data-caption="Sprint Board">
-                <img src="assets/screenshots/monday-1.png" alt="Sprint Board" onerror="this.parentElement.classList.add('thumb-empty')" />
-                <span class="thumb-label">Sprint Board</span>
-              </button>
-              <button class="thumb" data-src="assets/screenshots/monday-2.png" data-caption="Kanban Board">
-                <img src="assets/screenshots/monday-2.png" alt="Kanban Board" onerror="this.parentElement.classList.add('thumb-empty')" />
-                <span class="thumb-label">Kanban</span>
-              </button>
-              <button class="thumb" data-src="assets/screenshots/monday-3.png" data-caption="Calendar View">
-                <img src="assets/screenshots/monday-3.png" alt="Calendar View" onerror="this.parentElement.classList.add('thumb-empty')" />
-                <span class="thumb-label">Calendar</span>
-              </button>
-              <button class="thumb" data-src="assets/screenshots/Architecture_Graph.png" data-caption="Architecture Graph">
-                <img src="assets/screenshots/Architecture_Graph.png" alt="Architecture Graph" onerror="this.parentElement.classList.add('thumb-empty')" />
-                <span class="thumb-label">Architecture</span>
-              </button>
+
+            <!-- Tab: Architecture -->
+            <div class="tab-content" id="tab-architecture">
+              <div class="architecture-view">
+                <img
+                  src="assets/screenshots/Architecture_Graph.png"
+                  alt="System Architecture"
+                  class="architecture-img"
+                  id="archImg"
+                />
+                <button class="screenshot-zoom" id="archZoom" aria-label="Zoom in">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg>
+                </button>
+              </div>
             </div>
           </div>
         </div>
